@@ -12,6 +12,30 @@ h3 {
   color: #2e2f42;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+.block-text {
+  font-size: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+}
+
+.block-text {
+  font-size: 16px;
+}
+
 .block-title {
   font-weight: 500;
   line-height: 1.2;
@@ -19,14 +43,11 @@ h3 {
   letter-spacing: 0.02em;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.page-header {
+.header-page {
   color: #e7e9fc;
 }
-
+.header-nav {
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -40,42 +61,47 @@ ul {
 .header-logo {
   color: #2e2f42;
 }
-
-.page-nav .link {
+.nav-pages {
+}
+.pages-link {
   text-decoration: none;
   font-weight: 500;
   color: #2e2f42;
 }
-.page-nav .link:hover,
-.page-nav .link:focus {
+.pages-link:hover,
+.pages-link:focus {
   color: #404bbf;
 }
-
-.page-adress {
+.adress-page {
   font-style: normal;
 }
-
-.page-adress .adress-link {
+.adress-list {
+}
+.adress-item {
+}
+.adress-link {
   text-decoration: none;
   color: #434455;
 }
 
-.page-adress .adress-link:hover,
-.page-adress .adress-link:focus {
+.adress-link:hover,
+.adress-link:focus {
   color: #404bbf;
 }
 
-.page-main {
+.main-page {
+}
+.hero-page {
   background-color: #2e2f42;
 }
-.main-title {
+.hero-title {
   color: #ffffff;
   font-size: 56px;
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
-.main-button {
+.hero-button {
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
@@ -85,40 +111,58 @@ ul {
   line-height: 1.5;
   font-size: 16px;
 }
-.main-button:hover,
-.main-button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #404bbf;
 }
-
-.page-team {
+.adv-page {
+}
+.adv-title {
+}
+.adv-list {
+}
+.adv-item {
+}
+.adv-text {
+}
+.team-page {
   background-color: #f4f4fd;
 }
-
-.page-footer {
+.team-title {
+}
+.team-list {
+}
+.team-card {
+}
+.team-img {
+}
+.team-card-title {
+}
+.team-card-text {
+}
+.portf-page {
+}
+.portf-title {
+}
+.portf-list {
+}
+.portf-card {
+}
+.portf-img {
+}
+.portf-card-title {
+}
+.portf-card-text {
+}
+.footer-page {
   background-color: #2e2f42;
   color: #f4f4fd;
 }
-
-.page-footer > .logo {
+.footer-page > .logo {
   color: #4d5ae5;
 }
-
 .footer-logo {
   color: #f4f4fd;
 }
-
-.section-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
-}
-
-.card {
-  background-color: #ffffff;
-}
-
-.block-text {
-  font-size: 16px;
+.footer-text {
 }
