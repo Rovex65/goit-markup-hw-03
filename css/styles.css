@@ -28,11 +28,7 @@ img {
   display: block;
   max-width: 100%;
 }
-.container {
-  width: 1158px;
-  padding: 0 15px 0 15px;
-  margin: 0 auto;
-}
+
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -262,4 +258,9 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.container {
+  width: 1158px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
 }
