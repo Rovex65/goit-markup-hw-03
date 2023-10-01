@@ -55,6 +55,7 @@ img {
 }
 .header-page {
   color: #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
@@ -64,7 +65,7 @@ img {
 }
 .header-nav {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -75,6 +76,7 @@ img {
   color: #4d5ae5;
   text-decoration: none;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .header-logo {
   color: #2e2f42;
@@ -87,6 +89,7 @@ img {
   text-decoration: none;
   font-weight: 500;
   color: #2e2f42;
+  padding: 24px 0;
 }
 .pages-link:hover,
 .pages-link:focus {
@@ -113,18 +116,19 @@ img {
 }
 .hero-page {
   background-color: #2e2f42;
-  text-align: center;
+  padding: 188px 0;
 }
 .hero-container {
-  padding: 188px 472px;
+  padding: 0 472px;
 }
 .hero-title {
   color: #ffffff;
   font-size: 56px;
-
+  max-width: 496px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
+  text-align: center;
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -139,6 +143,9 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -151,7 +158,6 @@ img {
 .adv-container {
 }
 .adv-main-title {
-  display: none;
 }
 .adv-title {
 }
@@ -160,7 +166,7 @@ img {
   gap: 24px;
 }
 .adv-item {
-  flex-basis: calc((1128px-24px * 3) / 4);
+  flex-basis: calc((100%-72px) / 4);
 }
 .adv-title {
   margin-bottom: 8px;
@@ -184,11 +190,12 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  padding-bottom: 32px;
   text-align: center;
 }
 .team-img {
-  margin-bottom: 32px;
+}
+.team-card-container {
+  padding: 32px 0;
 }
 .team-card-title {
   margin-bottom: 8px;
@@ -209,12 +216,14 @@ img {
   column-gap: 24px;
 }
 .portf-card {
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
-  flex-basis: calc((1128px-24px * 2) / 3);
-  padding-bottom: 32px;
+  flex-basis: calc((100%-24px * 2) / 3);
 }
 .portf-img {
-  margin-bottom: 32px;
+}
+.portf-card-container {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
 }
 .portf-card-title {
   margin-bottom: 8px;
@@ -229,11 +238,26 @@ img {
 }
 .footer-page > .logo {
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo {
   color: #f4f4fd;
 }
 .footer-text {
   max-width: 264px;
-  margin-top: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
