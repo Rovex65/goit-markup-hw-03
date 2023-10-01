@@ -10,12 +10,30 @@ h1,
 h2,
 h3 {
   color: #2e2f42;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 ul {
-  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  max-width: 1440px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin: 0 auto;
+}
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -23,30 +41,30 @@ ul {
   text-transform: capitalize;
   letter-spacing: 0.02em;
 }
-
-.block-text {
-  font-size: 16px;
-}
-
-.card {
-  background-color: #ffffff;
-}
-
-.block-text {
-  font-size: 16px;
-}
-
 .block-title {
   font-weight: 500;
   line-height: 1.2;
   font-size: 20px;
   letter-spacing: 0.02em;
 }
-
+.block-text {
+  font-size: 16px;
+}
+.card {
+  background-color: #ffffff;
+}
 .header-page {
   color: #e7e9fc;
 }
+.header-container {
+  display: flex;
+  gap: 332px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .header-nav {
+  display: flex;
+  gap: 76px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -61,7 +79,9 @@ ul {
 .header-logo {
   color: #2e2f42;
 }
-.nav-pages {
+.pages-list {
+  display: flex;
+  gap: 40px;
 }
 .pages-link {
   text-decoration: none;
@@ -76,6 +96,8 @@ ul {
   font-style: normal;
 }
 .adress-list {
+  display: flex;
+  gap: 40px;
 }
 .adress-item {
 }
@@ -83,23 +105,26 @@ ul {
   text-decoration: none;
   color: #434455;
 }
-
 .adress-link:hover,
 .adress-link:focus {
   color: #404bbf;
 }
-
 .main-page {
 }
 .hero-page {
   background-color: #2e2f42;
+  text-align: center;
+}
+.hero-container {
+  padding: 188px 472px;
 }
 .hero-title {
   color: #ffffff;
   font-size: 56px;
-  text-align: center;
+
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -110,53 +135,97 @@ ul {
   letter-spacing: 0.04em;
   line-height: 1.5;
   font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
 }
 .adv-page {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.adv-container {
+}
+.adv-main-title {
+  display: none;
 }
 .adv-title {
 }
 .adv-list {
+  display: flex;
+  gap: 24px;
 }
 .adv-item {
+  flex-basis: calc((1128px-24px * 3) / 4);
+}
+.adv-title {
+  margin-bottom: 8px;
 }
 .adv-text {
 }
 .team-page {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title {
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-card {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  padding-bottom: 32px;
+  text-align: center;
 }
 .team-img {
+  margin-bottom: 32px;
 }
 .team-card-title {
+  margin-bottom: 8px;
 }
 .team-card-text {
 }
 .portf-page {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .portf-title {
+  margin-bottom: 72px;
 }
 .portf-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .portf-card {
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  flex-basis: calc((1128px-24px * 2) / 3);
+  padding-bottom: 32px;
 }
 .portf-img {
+  margin-bottom: 32px;
 }
 .portf-card-title {
+  margin-bottom: 8px;
 }
 .portf-card-text {
 }
 .footer-page {
   background-color: #2e2f42;
   color: #f4f4fd;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-page > .logo {
   color: #4d5ae5;
@@ -165,4 +234,6 @@ ul {
   color: #f4f4fd;
 }
 .footer-text {
+  max-width: 264px;
+  margin-top: 16px;
 }
