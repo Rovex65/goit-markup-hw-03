@@ -83,6 +83,7 @@ img {
   gap: 40px;
 }
 .pages-link {
+  display: block;
   text-decoration: none;
   font-weight: 500;
   color: #2e2f42;
@@ -97,13 +98,16 @@ img {
 }
 .adress-list {
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 .adress-item {
 }
 .adress-link {
+  display: block;
   text-decoration: none;
   color: #434455;
+  padding: 24px 0;
 }
 .adress-link:hover,
 .adress-link:focus {
@@ -148,27 +152,27 @@ img {
 .hero-button:focus {
   background-color: #404bbf;
 }
-.adv-page {
+.advantages-page {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.adv-container {
+.advantages-container {
 }
-.adv-main-title {
+.advantages-main-title {
 }
-.adv-title {
+.advantages-title {
 }
-.adv-list {
+.advantages-list {
   display: flex;
   gap: 24px;
 }
-.adv-item {
+.advantages-item {
   flex-basis: calc((100%-72px) / 4);
 }
-.adv-title {
+.advantages-title {
   margin-bottom: 8px;
 }
-.adv-text {
+.advantages-text {
 }
 .team-page {
   background-color: #f4f4fd;
